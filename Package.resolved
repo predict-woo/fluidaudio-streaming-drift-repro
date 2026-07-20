@@ -1,0 +1,15 @@
+{
+  "originHash" : "44b2d106c8dea63ef28140049469764e140187a05f33e9d4e77589a99415f697",
+  "pins" : [
+    {
+      "identity" : "fluidaudio",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/predict-woo/FluidAudio.git",
+      "state" : {
+        "branch" : "fix/sortformer-streaming-mel-drift",
+        "revision" : "0c56df01d1a5b4dd863586886901735955a44a7d"
+      }
+    }
+  ],
+  "version" : 3
+}
