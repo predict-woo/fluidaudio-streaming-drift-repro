@@ -34,3 +34,7 @@ One-shot feeding matches the ground-truth boundaries within a frame. With 100 ms
 ## Why
 
 Each streaming preprocess call center-pads the buffered audio (`nFFT/2` zeros on both sides) before computing mel frames, but the `samplesConsumed` inversion only accounts for one pad, so every call emits frames covering 272 samples (17 ms) more timeline than the audio it consumes. One call per 6-frame chunk adds up to the ~3.3% clock skew above. Feeding everything in one `addAudio` call pads once, which is why batch-fed tests never see it.
+
+---
+
+This repro was created with [Claude Code](https://claude.com/claude-code).
